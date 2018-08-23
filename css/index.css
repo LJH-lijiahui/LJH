@@ -57,3 +57,216 @@
 	height: 50px;
 }
 /*首页栏目介绍*/
+.tripNav{
+	background:#282c35 ;
+	width: 100%;
+	min-width: 1200px;
+	height: 130px;
+}
+.tripNav ul{
+	width: 1200px;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+.tripNav ul li{
+	width: 33%;
+	height: 130px;
+	float: left;
+	border-left: 1px solid rgba(62,69,81,1);
+	border-right: 1px solid rgba(62,69,81,1);
+	position: relative;
+	cursor: pointer;
+}
+.tripBox{
+	position: absolute;
+	top: 130px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(3,10,20,0.8);
+}
+/*模块样式*/
+.makesup{
+	width: 100%;
+	background: #FFFFFF;
+	padding: 100px 0;
+}
+.module{
+	width: 1200px;
+	min-width: 1200px;
+	margin:0 auto;
+	background: #fff;
+	clear: both;
+	overflow: hidden;
+	position: relative;
+}
+.moduleBox{
+	width: 380px;
+	height: 350px;
+	background: #f1f1f1;
+	display: inline-block;
+	/*border: 1px #c1c1c1 solid;*/
+	box-sizing: border-box;
+	position: relative;
+	cursor: pointer;
+}
+.moduleBox:nth-child(2){
+	margin: 0 25px;
+}
+.moduleTitle{
+	width: 1200px;
+	min-width: 1200px;
+	margin: 0 auto;
+	font-size: 22px;
+	color: #494949;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.oneIndex{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0);
+	z-index: 11;
+	color: #fff;
+	text-align: center;
+}
+.twoIndex{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: none;
+}
+.twoIndex img{
+	height: 100%;
+	width: 100%;
+}
+.text{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 50px;
+	color: #898989;
+	font-size: 16px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.text p:nth-child(1){
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 30px;
+}
+.moduleBox:hover div.text>p:nth-child(1){
+	color: #fff;
+}
+/*公司优势*/
+.advantage{
+	width: 1200px;
+	margin: 0 auto; 
+	margin-top: 30px;
+	padding-bottom: 50px;
+}
+/*.advantage ul{
+	width: 80%;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.advantage ul li{
+	width: 25px;
+	height: 25px;
+	float: left;
+	background: #007AFF;
+	text-align: center;
+	margin-left: 30px;
+	border-radius: 50%;
+	line-height: 25px;
+	
+}*/
+.advantage ul li span{
+	color: #fff;
+}
+.advantageBox{
+	height: 250px;
+	line-height: 250px;
+	text-align: center;
+	position: relative;
+}
+.advantageBox ul{
+	    position: absolute;
+    width: 1000px;
+    /* height: 120px; */
+    top: 75px;
+    left: 51%;
+    /* margin-top: -60px; */
+    margin-left: -498px;
+    text-align: left;
+}
+.advantageBox ul li{
+	    float: left;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #FFf;
+    background: #007AFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 113px;
+    position: relative;
+}
+.advantageBox ul li:nth-child(2n) {
+    margin-top: 70px;
+}
+.advan_line_title {
+    position: absolute;
+    width: 100px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -50px;
+    top: -30px;
+}
+.advantageBox ul li:nth-child(2n)>.advan_line_title {
+    top: 30px;
+}
+.advantageBox ul li:hover{
+	background: orange;
+}
+.advantageBox ul li:hover p{
+	color: orange;
+}
+.advantageBox ul li:hover .advan_line_info{
+	display:-webkit-box;
+}
+.advan_line_info {
+    position: absolute;
+    color: orange;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    left: 50%;
+    margin-left: -100px;
+    top: -80px;
+    display: none;
+}
+.advantageBox ul li:nth-child(2n)>.advan_line_info {
+    top: 50px;
+}
+.chaoTwo{
+overflow:hidden; 
+
+text-overflow:ellipsis;
+
+/*display:-webkit-box;*/ 
+
+-webkit-box-orient:vertical;
+
+-webkit-line-clamp:2;
+}
