@@ -181,7 +181,13 @@
 			<div class="coTeam">
 				<p class="moduleTitle">技术团队</p>
 				<div class="Teamcontent">
-					<div class="TeamBox"></div>
+					<div class="TeamBox">
+						<div class="Teampeople">
+							<img src="image/module2.jpg"/>
+							<p>技术总监</p>
+						</div>
+						<div class="TeamTitle"></div>
+					</div>
 					<div class="TeamBox"></div>
 					<div class="TeamBox"></div>
 					<div class="TeamBox"></div>
@@ -279,6 +285,13 @@
 			}, function() {
 				$(this).find(".twoIndex").fadeOut();
 				$(this).find(".oneIndex .text").css("color", "#898989");
+			});
+			$(".TeamBox").hover(function() {
+				$(this).find(".TeamTitle").slideDown(500);
+
+			}, function() {
+				$(this).find(".TeamTitle").slideUp();
+
 			});
 		})
 	</script>

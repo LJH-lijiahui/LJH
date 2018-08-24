@@ -299,6 +299,36 @@ text-overflow:ellipsis;
 	height: 400px;
 	border: solid 1px #5DDFFF;
 	margin-left: 13px;
+	position: relative;
+}
+.Teampeople{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/*background: #000000;*/
+}
+.Teampeople img{
+	height: 70%;
+	width: 100%;
+}
+.Teampeople p{
+	height: 29%;
+	width: 100%;
+	background: #FFFFFF;
+	text-align: center;
+	line-height: 120px;
+	color: #333;
+	font-size: 20px;
+	/*font-weight: 600;*/
+}
+.TeamTitle{
+	position: absolute;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	display: none;
 }
 /*合作盟友*/
 .cooperation{
@@ -356,4 +386,25 @@ text-overflow:ellipsis;
 	position: absolute;
 	right: 20px;
 	bottom: 0;
+}
+
+/***************************************************技术团队模块样式**************************************************/
+/*技术团队二级页面样式开始*/
+.myTeamcontent{
+	background: #fff;
+	width: 1200px;
+	min-width: 1200px;
+	padding-top: 200px;
+	margin:  0 auto;
+}
+.peopleBox{
+	width: 90%;
+	border: 2px solid #f1f1f1;
+	height: 300px;
+	margin-bottom:60px;
+}
+.peopleBox:nth-child(2n){
+	margin:0 auto;
+	margin-bottom:60px;
+	
 }
