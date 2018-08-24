@@ -10,6 +10,7 @@
 		<style type="text/css">
 			.swiper-container {
 				width: 100%;
+				min-width:1200px;
 			}
 			
 			.swiper-slide img {
@@ -28,7 +29,7 @@
 						<img src="image/logo.png" alt="" />
 					</div>
 					<ul class="navIndex">
-						<li>
+						<li class="action">
 							首页
 						</li>
 						<li>
@@ -182,9 +183,9 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script>
-		var ViewHeight = $(window).height()
+		var ViewHeight = $(window).height();
 		//		console.log(ViewHeight)
-		$(".swiper-container").css("height", ViewHeight - 50)
+		$(".swiper-container").css("height", ViewHeight - 50);
 		$(document).ready(function() {
 			var mySwiper = new Swiper('.swiper-container', {
 				loop: true,
@@ -208,7 +209,7 @@
 				//				scrollbar: {
 				//					el: '.swiper-scrollbar',
 				//				},
-			})
+			});
 			$(".tripNav ul li").hover(function() {
 				$(this).find(".tripBox").animate({
 					top: 0

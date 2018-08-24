@@ -52,6 +52,10 @@
 	top: 0;
 	
 }
+.action{
+	border-bottom: 2px solid #5ddfff;
+	color:#5ddfff!important ;
+}
 .indexLogo img{
 	margin-top: 20px;
 	height: 50px;
