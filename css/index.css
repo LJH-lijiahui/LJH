@@ -87,6 +87,8 @@
 	border-right: 1px solid rgba(62,69,81,1);
 	position: relative;
 	cursor: pointer;
+	/*clear: both;
+	overflow: hidden;*/
 }
 .tripBox{
 	position: absolute;
@@ -95,6 +97,40 @@
 	width: 100%;
 	height: 100%;
 	background:rgba(3,10,20,0.8);
+	z-index: 100;
+}
+.tripBox p{
+	/*line-height: 100px;*/
+	height: 100%;
+	width: 100%;
+	padding: 25px;
+	color: #FFFFFF;
+	font-size: 16px;
+	box-sizing: border-box;
+}
+.tripImg{
+	height: 100%;
+	width: 30%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	line-height: 130px;
+}
+.tripImg img{
+	height: auto;
+	width: 45%;
+	    vertical-align: middle;
+	
+}
+.tripNav ul li>p{
+	color: #FFFFFF;
+	width: 60%;
+	height: 100%;
+	font-size: 16px;
+	line-height: 130px;
+	position: absolute;
+	right: 20px;
 }
 /*模块样式*/
 .makesup{
@@ -318,7 +354,7 @@ text-overflow:ellipsis;
 	text-align: center;
 	line-height: 120px;
 	color: #333;
-	font-size: 20px;
+	font-size: 18px;
 	/*font-weight: 600;*/
 }
 .TeamTitle{
@@ -329,6 +365,20 @@ text-overflow:ellipsis;
 	left: 0;
 	top: 0;
 	display: none;
+}
+.TeamTitle p{
+	padding: 10px;
+	font-size: 14px;
+	color: rgb(102, 102, 102);
+	/*overflow:hidden; 
+text-overflow:ellipsis;
+display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:6;*/
+}
+.TeamTitle h1{
+	padding: 10px;
+	font-size: 16px;
 }
 /*合作盟友*/
 .cooperation{
@@ -350,11 +400,12 @@ text-overflow:ellipsis;
 	text-align: center;
 	background: #F1F1F1;
 	margin-top: 20px;
-	
+	line-height: 80px;
 }
 .cooperation ul li img{
-	width: 100%;
-	height: 100%;
+	    vertical-align: middle;
+	width: auto;
+	height: auto;
 }
 /*公共底部样式*/
 .commonBottom{
@@ -445,9 +496,9 @@ text-overflow:ellipsis;
 	width: 100%;
 	min-width: 1200px;
 	margin-top: 180px;
-	font-size: 30px;
+	font-size: 26px;
 	font-weight: 600;
-	color: #333;
+	color: #898989;
 	text-align: center;
 	/*border-bottom: 1px solid #898989;*/
 }
