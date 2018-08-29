@@ -49,7 +49,7 @@
 							研发团队
 						</li>
 						</a>
-						<a href="index.html">
+						<a href="mySkill.html">
 						<li>
 							技术支持
 						</li>
@@ -331,21 +331,21 @@
 			$(".tripNav ul li").hover(function() {
 				$(this).find(".tripBox").animate({
 					top: 0
-				}, 500);
+				}, 1000);
 			}, function() {
 				$(this).find(".tripBox").animate({
 					top: "130px"
-				}, 300);
+				}, 500);
 			});
 			$(".moduleBox").hover(function() {
-				$(this).find(".twoIndex").fadeIn();
+				$(this).find(".twoIndex").fadeIn(1000);
 				$(this).find(".oneIndex .text").css("color", "#fff");
 			}, function() {
-				$(this).find(".twoIndex").fadeOut();
+				$(this).find(".twoIndex").fadeOut(1000);
 				$(this).find(".oneIndex .text").css("color", "#898989");
 			});
 			$(".TeamBox").hover(function() {
-				$(this).find(".TeamTitle").slideDown(500);
+				$(this).find(".TeamTitle").slideDown(800);
 
 			}, function() {
 				$(this).find(".TeamTitle").slideUp();
