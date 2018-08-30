@@ -455,6 +455,7 @@ display:-webkit-box;
 	height: 300px;
 	margin-bottom:60px;
 	position: relative;
+	overflow: hidden;
 }
 .peopleBox:nth-child(2n){
 	margin:0 auto;
@@ -471,7 +472,7 @@ display:-webkit-box;
 	width: 100%;
 	height: 100%;
 }
-.peopleImg img:hover{
+.peopleBox:hover div.peopleImg img{
 	animation: scalea 1s;
 	-moz-animation: scalea 1s;	/* Firefox */
 	-webkit-animation: scalea 1s;	/* Safari 和 Chrome */
@@ -480,6 +481,10 @@ display:-webkit-box;
 -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
 }
 @-webkit-keyframes scalea{
+	from{transform: scale(1)}
+	to{transform: scale(1.3)}
+}
+@keyframes scalea{
 	from{transform: scale(1)}
 	to{transform: scale(1.3)}
 }
@@ -492,6 +497,22 @@ display:-webkit-box;
 	border: 1px solid #5DDFFF;
 	padding: 20px;
 	box-sizing: border-box;
+}
+.peopleText p{
+	color: #333;
+}
+.peopleTextTwo{
+	position: absolute;
+	right: -756px;
+	top: 0;
+	width: 70%;
+	height: 100%;
+	/*border: 1px solid #5DDFFF;*/
+	padding: 20px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.8);
+	z-index: 999;
+	color: #fff;
 }
 .MyTeamtitle{
 	width: 100%;

@@ -329,26 +329,26 @@
 				//				},
 			});
 			$(".tripNav ul li").hover(function() {
-				$(this).find(".tripBox").animate({
+				$(this).find(".tripBox").stop(true).animate({
 					top: 0
 				}, 1000);
 			}, function() {
-				$(this).find(".tripBox").animate({
+				$(this).find(".tripBox").stop(true).animate({
 					top: "130px"
 				}, 500);
 			});
 			$(".moduleBox").hover(function() {
-				$(this).find(".twoIndex").fadeIn(1000);
+				$(this).find(".twoIndex").filter(':not(:animated)').fadeIn(500);
 				$(this).find(".oneIndex .text").css("color", "#fff");
 			}, function() {
-				$(this).find(".twoIndex").fadeOut(1000);
+				$(this).find(".twoIndex").fadeOut(500);
 				$(this).find(".oneIndex .text").css("color", "#898989");
 			});
 			$(".TeamBox").hover(function() {
-				$(this).find(".TeamTitle").slideDown(800);
+				$(this).find(".TeamTitle").stop(true).slideDown(800);
 
 			}, function() {
-				$(this).find(".TeamTitle").slideUp();
+				$(this).find(".TeamTitle").stop(true).slideUp();
 
 			});
 		})
