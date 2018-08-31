@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>易为数据（广州）科技有限公司</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-pagination-bullet{
+    	background: #fff;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+    	height: 100%;
+    	width: 100%;
+    }
+    </style>
+</head>
+<body>
+<!--首页顶部导航-->
+			<div class="navTop">
+				<div class="TopBox">
+					<div class="indexLogo">
+						<img src="image/logo.png" alt="" />
+					</div>
+					<ul class="navIndex">
+						<a href="index.html">
+						<li >
+							首页
+						</li>
+						</a>
+						<a href="mypresent.html">
+						<li>
+							关于我们
+						</li>
+						</a>
+						<a href="case.html">
+						<li class="action">
+							开发案例
+						</li>
+						</a>
+						<a href="myTeam.html">
+						<li>
+							研发团队
+						</li>
+						</a>
+						<a href="mySkill.html">
+						<li >
+							技术支持
+						</li>
+						</a>
+					</ul>
+				</div>
+
+			</div>
+    <!-- 案例轮播 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/case1.jpg"/></div>
+            <div class="swiper-slide"><img src="image/case2.jpg"/></div>
+            <div class="swiper-slide"><img src="image/case3.jpg"/></div>
+            <div class="swiper-slide"><img src="image/case4.jpg"/></div>
+
+        </div>
+        <!-- 新增小点 -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+	<script src="js/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- 初始化轮播图 -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        direction: 'vertical',
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+//      autoplay:true
+    });
+    </script>
+</body>
+</html>

@@ -542,6 +542,75 @@ display:-webkit-box;
 	border:  solid 1px #C1C1C1;
 	margin-left: 30px;
 	margin-bottom: 30px;
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	position: relative;
+	cursor: pointer;
+	border-radius: 20px;
+}
+.SkillBox>p{
+	font-size: 18px;
+	text-align: center;
+	color: #898989;
+	margin-top: 10px;
+}
+.SkillBox>img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	z-index:;
+}
+.SkillBox:hover{
+	animation: floatup 0.5s;
+	-moz-animation: floatup 0.5s;	/* Firefox */
+	-webkit-animation: floatup 0.5s;	/* Safari 和 Chrome */
+	-o-animation: floatup 0.5s;	/* Opera */	
+	animation-fill-mode:forwards; 
+-webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+box-shadow: #C1C1C1 5px 5px 5px;
+
+
+}
+@-webkit-keyframes floatup{
+	from{top: 0px;}
+	to{top: -10px;}
+}
+@keyframes floatup{
+	from{top: 0px;}
+	to{top: -10px;}
+}
+/*关于我们二级页面样式*/
+.mypresent{
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+	padding: 120px 0;
+}
+.presentbox{
+	width: 1200px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border: #C1C1C1 1px solid;
+	text-align: center;
+}
+.presentbox p{
+	text-indent: 20px;
+	padding: 15px;
+	font-size: 14px;
+	color: #898989;
+	text-align: left;
+	margin-bottom: 20px;
+	
+}
+.presentLine{
+	width: 80%;
+	margin: 0 auto;
+	height: 1px;
+	border-bottom: 1px solid #c1c1c1;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.presentbox img{
+	width: 50%;
 }
